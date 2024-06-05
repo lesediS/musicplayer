@@ -8,16 +8,8 @@ import android.view.WindowInsetsController
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
-import androidx.compose.animation.AnimatedContent
-import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.tween
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
-import androidx.compose.animation.scaleIn
-import androidx.compose.animation.scaleOut
-import androidx.compose.animation.togetherWith
-import androidx.compose.animation.with
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -80,7 +72,7 @@ import kotlin.math.absoluteValue
 
 class MainActivity : ComponentActivity() {
 
-    lateinit var player: ExoPlayer
+    private lateinit var player: ExoPlayer
 
     @SuppressLint("RestrictedApi")
     @RequiresApi(Build.VERSION_CODES.R)
@@ -212,7 +204,7 @@ class MainActivity : ComponentActivity() {
                         mutableStateOf(false)
                     }
 
-                    val currrentPosition = remember {
+                    val currentPosition = remember {
                         mutableLongStateOf(0)
                     }
 
@@ -229,7 +221,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     LaunchedEffect(player.currentPosition) {
-                        currrentPosition.longValue = player.currentPosition
+                        currentPosition.longValue = player.currentPosition
                     }
                     
                     LaunchedEffect(player.duration) {
@@ -243,7 +235,7 @@ class MainActivity : ComponentActivity() {
                         pagerState.animateScrollToPage(playingIndex.intValue, animationSpec = tween(500))
                     }
 
-                    var percentReached = currrentPosition.longValue.toFloat() / (if (totalDuration.longValue > 0) totalDuration.longValue else 0).toFloat()
+                    var percentReached = currentPosition.longValue.toFloat() / (if (totalDuration.longValue > 0) totalDuration.longValue else 0).toFloat()
                     if (percentReached.isNaN()) {
                         percentReached = 0f
                     }
@@ -327,7 +319,7 @@ class MainActivity : ComponentActivity() {
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
 
-                                Text(text = convertLongToTxt(currrentPosition.longValue), //Time
+                                Text(text = convertLongToTxt(currentPosition.longValue), //Time
                                     modifier = Modifier.width(55.dp),
                                     color = textColor,
                                     textAlign = TextAlign.Center)
