@@ -1,54 +1,80 @@
 <h1>Jetpack Compose Music Player</h1>
-<b>A simple music player application built with Jetpack Compose.</b>
-
-<br><br>
+<p>A simple music player application built with Jetpack Compose.</p>
 
 <h2>Features</h2>
 
-Play 3 pre-loaded songs
-Clean and modern UI with Jetpack Compose
-Getting Started
-Prerequisites
-Android Studio
-Android device or emulator
-Running the Project
-Clone the repository:
+<ul>
+    <li>Play 3 pre-loaded songs</li>
+    <li>Clean and modern UI with Jetpack Compose</li>
+</ul>
 
-bash
-Copy code
-git clone https://github.com/yourusername/jetpack-compose-music-player.git
-cd jetpack-compose-music-player
-Open the project in Android Studio:
+<h2>Getting Started</h2>
+<h3>Prerequisites</h3>
 
-Open Android Studio.
-Click on File -> Open and select the jetpack-compose-music-player project.
-Run on an Emulator:
+<ul>
+    <li>Android Studio</li>
+    <li>Android device or emulator</li>
+</ul>
 
-Select your device emulator.
-Click the Run button (green play button) in Android Studio.
-The application will build and install on the emulator. You can now listen to the 3 songs available in the app.
+<h2>Running the Project</h2>
+<ol>
+<li>Clone the repository:</li>
+<code>git clone https://github.com/lesediS/musicplayer.git</code>
+<br>
+<code>cd musicplayer</code>
+<li>Open the project in Android Studio:</li>
+    <ul>
+        <li>Open Android Studio.</li>
+        <li>Click on File -> Open and select the jetpack-compose-music-player project.</li>
+    </ul>
 
-Running on a Physical Device
-Enable Developer Options on your Android device:
+<li>Run on an Emulator:</li>
+    <ul>
+        <li>Select your device emulator.</li>
+        <li>Click the Run button (green play button) in Android Studio.</li>
+    </ul>
+</ol>
 
-Go to Settings -> About phone.
-Tap on Build number 7 times until it says you are a developer.
-Enable Wireless Debugging:
+<p>The application will build and install on the emulator. You can now listen to the 3 songs available in the app.</p>
 
-Go to Settings -> Developer options.
-Enable Wireless debugging.
-Run the project:
+<h2>Running on a Physical Device</h2>
+<ol>
+    <li>Enable Developer Options on your Android device:</li>
+    <ul>
+        <li>Go to Settings -> About phone.</li>
+        <li>Enable Developer options.</li>
+    </ul>
 
-Connect your Android device to your computer via USB or ensure both your device and computer are on the same network.
-Click the Run button in Android Studio.
-The application will build and install on your physical device. You can now listen to the 3 songs available in the app.
+  <li>Enable Wireless Debugging:</li>
+    <ul>
+        <li>Go to Settings -> Developer options.</li>
+        <li>Enable Wireless debugging.</li>
+    </ul>
 
-Building the APK
-Generate APK:
+   <li>Run the project:</li>
+    <ul>
+        <li>Connect your Android device to your computer via USB or ensure both your device and computer are on the same network.</li>
+        <li>Click the Run button in Android Studio.</li>
+    </ul>
+</ol>
 
-In Android Studio, go to Build -> Build Bundle(s) / APK(s) -> Build APK(s).
-Locate the APK:
+<p>The application will build and install on your physical device. You can now listen to the 3 songs available in the app.</p>
 
-After the build is complete, a notification will appear in the bottom-right corner.
-Click on locate to find the generated APK file.
-You can now install the APK on your Android device.
+<h2>Building the APK</h2>
+<ol>
+    <li>Generate APK:</li>
+    <ul>
+        <li>In Android Studio, go to Build -> Build Bundle(s) / APK(s) -> Build APK(s).</li>
+    </ul>
+
+   <li>Locate the APK:</li>
+    <ul>
+        <li>After the build is complete, a notification will appear in the bottom-right corner.</li>
+        <li>Click on locate to find the generated APK file.</li>
+    </ul>
+</ol>
+
+<p>You can now install the APK on your Android device.</p>
+
+</body>
+</html>
