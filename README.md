@@ -1,7 +1,10 @@
-Jetpack Compose Music Player
-A simple music player application built with Jetpack Compose.
+<h1>Jetpack Compose Music Player</h1>
+<b>A simple music player application built with Jetpack Compose.</b>
 
-Features
+<br><br>
+
+<h2>Features</h2>
+
 Play 3 pre-loaded songs
 Clean and modern UI with Jetpack Compose
 Getting Started
